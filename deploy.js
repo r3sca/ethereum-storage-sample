@@ -10,6 +10,7 @@ async function main() {
     process.env.PRIVATE_KEY_PASSWORD
   );
 
+  wallet = await wallet.connect(provier);
   const abi = fs.readFileSync("./SimpleStorage_sol_SimpleStorage.abi", "utf-8");
   const binary = fs.readFileSync(
     "./SimpleStorage_sol_SimpleStorage.bin",
