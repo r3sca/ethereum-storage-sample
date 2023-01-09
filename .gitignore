@@ -1,0 +1,4 @@
+.env
+.encryptedKey.json
+.vscode
+node_modules
